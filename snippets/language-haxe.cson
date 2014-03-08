@@ -1,0 +1,333 @@
+'.source.haxe':
+  '#else error':
+    'prefix': '#'
+    'body': '#else error\n'
+  '#else flash6':
+    'prefix': '#6'
+    'body': '#else flash6\n'
+  '#else flash7':
+    'prefix': '#7'
+    'body': '#else flash7\n'
+  '#else flash8':
+    'prefix': '#8'
+    'body': '#else flash8\n'
+  '#else flash9':
+    'prefix': '#9'
+    'body': '#else flash9\n'
+  '#else js':
+    'prefix': '#j'
+    'body': '#else js\n'
+  '#else neko':
+    'prefix': '#n'
+    'body': '#else neko\n'
+  '#else':
+    'prefix': '#'
+    'body': '#else '
+  '#end':
+    'prefix': '#'
+    'body': '#end\n'
+  '#if flash6':
+    'prefix': '#6'
+    'body': '#if flash6\n'
+  '#if flash7':
+    'prefix': '#7'
+    'body': '#if flash7\n'
+  '#if flash8':
+    'prefix': '#8'
+    'body': '#if flash8\n'
+  '#if flash9':
+    'prefix': '#9'
+    'body': '#if flash9\n'
+  '#if js':
+    'prefix': '#j'
+    'body': '#if js\n'
+  '#if neko':
+    'prefix': '#n'
+    'body': '#if neko\n'
+  '#if':
+    'prefix': '#'
+    'body': '#if '
+  'break':
+    'prefix': 'br'
+    'body': 'break;\n'
+  'case':
+    'prefix': 'cs'
+    'body': 'case ${1:expression}:\n\t${2:statement}\n'
+  'catch':
+    'prefix': 'ch'
+    'body': 'catch ( ${1:error } )\n{\n\t${2:expression}\n}'
+  'class':
+    'prefix': 'cl'
+    'body': 'class ${1:class_name}\n{\n\n\tpublic function new()\n\t{\n\t\t${2:expression}\n\t}\n}'
+  'constructor':
+    'prefix': 'co'
+    'body': 'public function new()\n{\n\t${1:expression}\n}\n'
+  'continue':
+    'prefix': 'co'
+    'body': 'continue;'
+  'default':
+    'prefix': 'df'
+    'body': 'default :\n\t${1:statement}'
+  'do..while':
+    'prefix': 'do'
+    'body': 'do\n{\n\t${2:expression}\n} while ( ${1:condition} );'
+  'else..if':
+    'prefix': 'ei'
+    'body': 'else if ( ${1:condition} )\n{\n\t${2:expression}\n}'
+  'enum':
+    'prefix': 'en'
+    'body': 'enum ${1:enum_name}\n{\n\t${2:value}\n}'
+  'extern':
+    'prefix': 'ex'
+    'body': 'extern '
+  'for..in':
+    'prefix': 'fi'
+    'body': 'for ( ${1:var} in ${2:0}...${3:end} )\n{\n\t${4:expression}\n}'
+  'function':
+    'prefix': 'fn'
+    'body': 'function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'if':
+    'prefix': 'if'
+    'body': 'if ( ${1:condition} )\n{\n\t${2:expression}\n}'
+  'if..else':
+    'prefix': 'ie'
+    'body': 'if ( ${1:condition} )\n{\n\t${2:expression}\n} else\n{\n\t${3:expression}\n}'
+  'import':
+    'prefix': 'im'
+    'body': 'import ${1:package};'
+  'inline function':
+    'prefix': 'fn'
+    'body': 'inline function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'inline':
+    'prefix': 'in'
+    'body': 'inline'
+  'interface':
+    'prefix': 'in'
+    'body': 'interface ${1:interface_name}\n{\r\n\t${2:method}\n}'
+  'private function':
+    'prefix': 'fn'
+    'body': 'private function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'private inline function':
+    'prefix': 'fn'
+    'body': 'private inline function ${1:name}( ${2:parameters} )\n{\n\t${4:expression}\n}'
+  'private static function':
+    'prefix': 'fn'
+    'body': 'private static function ${1:name}( ${2:parameters} )\n{\n\t${4:expression}\n}'
+  'private static inline function':
+    'prefix': 'fn'
+    'body': 'private static inline function ${1:name}( ${2:parameters} )\n{\n\t${4:expression}\n}'
+  'private static inline var':
+    'prefix': 'va'
+    'body': 'private static inline var ${1:name} = ${2:value};'
+  'private static var':
+    'prefix': 'va'
+    'body': 'private static var ${1:name}: ${2:class_type};'
+  'private var':
+    'prefix': 'va'
+    'body': 'private var ${1:name}: ${2:class_type};'
+  'private':
+    'prefix': 'pr'
+    'body': 'private '
+  'public function':
+    'prefix': 'fn'
+    'body': 'public function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'public inline function':
+    'prefix': 'fn'
+    'body': 'public inline function ${1:name}( ${2:parameters} )\n{\n\t${4:expression}\n}'
+  'public static function':
+    'prefix': 'fn'
+    'body': 'public static function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'public static inline function':
+    'prefix': 'fn'
+    'body': 'public static inline function ${1:name}( ${2:parameters} )\n{\n\t${4:expression}\n}'
+  'public static inline var':
+    'prefix': 'va'
+    'body': 'public static inline var ${1:name} = ${2:value};'
+  'public static var':
+    'prefix': 'va'
+    'body': 'public static var ${1:name}: ${2:class_type};'
+  'public var':
+    'prefix': 'va'
+    'body': 'public var ${1:name}: ${2:class_type};'
+  'public':
+    'prefix': 'pu'
+    'body': 'public '
+  'return':
+    'prefix': 're'
+    'body': 'return ${1:expression};'
+  'static function':
+    'prefix': 'fn'
+    'body': 'static function ${1:name}( ${2:parameters} ): ${3:return_value}\n{\n\t${4:expression}\n}'
+  'static inline var':
+    'prefix': 'va'
+    'body': 'static inline var ${1:name} = ${2:value};'
+  'static var':
+    'prefix': 'va'
+    'body': 'static var ${1:name}: ${2:class_type};'
+  'static':
+    'prefix': 'st'
+    'body': 'static '
+  'switch':
+    'prefix': 'sw'
+    'body': 'switch ( ${1:condition} )\n{\r\n\tcase ${2:expression}:\n\t\t${3:statement}\n}'
+  'throw':
+    'prefix': 'th'
+    'body': 'throw ${1:expression};'
+  'trace':
+    'prefix': 'tr'
+    'body': 'trace( ${1:expression} );'
+  'try':
+    'prefix': 'tr'
+    'body': 'try\n{\n\t${1:expression}\n}'
+  'try..catch':
+    'prefix': 'tr'
+    'body': 'try\n{\n\t${1:expression}\n}catch ( ${1:error } )\n{\n\t${2:expression}\n}'
+  'typedef':
+    'prefix': 'ty'
+    'body': 'typedef ${1:typedef_name} =\n{\n\t${2:expression}\n}'
+  'var (infer)':
+    'prefix': 'va'
+    'body': 'var ${1:name};'
+  'var':
+    'prefix': 'va'
+    'body': 'var ${1:name}: ${2:class_type} = new ${3:class_type}($0);'
+  'while':
+    'prefix': 'wh'
+    'body': 'while ( ${1:condition} )\n{\n\t${2:expression}\n}'
+'.source.hxml':
+  'hxml --altfmt':
+    'prefix': 'alt'
+    'body': '--altfmt'
+  'hxml --auto-xml':
+    'prefix': 'ax'
+    'body': '--auto-xml'
+  'hxml --display':
+    'prefix': 'dis'
+    'body': '--display'
+  'hxml --flash-strict':
+    'prefix': 'fs'
+    'body': '--flash-strict'
+  'hxml --flash-use-stage':
+    'prefix': 'fus'
+    'body': '--flash-use-stage'
+  'hxml --gen-hx-classes':
+    'prefix': 'ghc'
+    'body': '--gen-hx-classes ${1:file}'
+  'hxml --help':
+    'prefix': 'h'
+    'body': '--help'
+  'hxml --neko-source':
+    'prefix': 'ns'
+    'body': '--neko-source'
+  'hxml --next':
+    'prefix': 'n'
+    'body': '--next'
+  'hxml --no-inline':
+    'prefix': 'no'
+    'body': '--no-inline'
+  'hxml --no-output':
+    'prefix': 'no'
+    'body': '--no-output'
+  'hxml --no-traces':
+    'prefix': 'nt'
+    'body': '--no-traces'
+  'hxml --times':
+    'prefix': 't'
+    'body': '--times'
+  'hxml -D':
+    'prefix': 'd'
+    'body': '-D ${1:var}'
+  'hxml -as3':
+    'prefix': 'as3'
+    'body': '-as3 ${1:directory}'
+  'hxml -cmd':
+    'prefix': 'cm'
+    'body': '-cmd ${1:command}'
+  'hxml -cp':
+    'prefix': 'cp'
+    'body': '-cp ${1:path}'
+  'hxml -debug':
+    'prefix': 'deb'
+    'body': '-debug'
+  'hxml -exclude':
+    'prefix': 'ex'
+    'body': '-exclude ${1:file}'
+  'hxml -help':
+    'prefix': 'h'
+    'body': '-help'
+  'hxml -js':
+    'prefix': 'js'
+    'body': '-js ${1:file}.js'
+  'hxml -lib':
+    'prefix': 'lib'
+    'body': '-lib ${1:lib_name}'
+  'hxml -main':
+    'prefix': 'main'
+    'body': '-main ${1:main_class}'
+  'hxml -neko':
+    'prefix': 'neko'
+    'body': '-neko ${1:file}.n'
+  'hxml -prompt':
+    'prefix': 'pr'
+    'body': '-prompt'
+  'hxml -resource':
+    'prefix': 'res'
+    'body': '-resource ${1:file}@${2:name}'
+  'hxml -swf-header':
+    'prefix': 'swf'
+    'body': '-swf-header ${1:width}:${2:height}:${3:fps}:${4:color}'
+  'hxml -swf-lib':
+    'prefix': 'swf'
+    'body': '-swf-lib ${1:file}'
+  'hxml -swf-version':
+    'prefix': 'swf'
+    'body': '-swf-version ${1:version}'
+  'hxml -swf':
+    'prefix': 'swf'
+    'body': '-swf ${1:file}.swf'
+  'hxml -v':
+    'prefix': 'v'
+    'body': '-v'
+  'hxml -x':
+    'prefix': 'x'
+    'body': '-x ${1:file}.n'
+  'hxml -xml':
+    'prefix': 'xml'
+    'body': '-xml ${1:file}'
+'.source.swfml':
+  'sfwml library':
+    'prefix': 'lib'
+    'body': '<library>\n\t${0:content}\n</library>'
+  'swfml class clip':
+    'prefix': 'clip'
+    'body': '<clip id="${1:id}" import="{2:resource}" class="{3:class_path}"/>{0}'
+  'swfml clip':
+    'prefix': 'clip'
+    'body': '<clip id="${1:id}" import="${2:resource}"/>${0}'
+  'swfml component':
+    'prefix': 'component'
+    'body': '<component id="${1:file}" file="${2:resource}"/>${0}'
+  'swfml file attributes':
+    'prefix': 'attributes'
+    'body': '<FileAttributes hasMetaData="${1:flag}" useNetwork="${2:flag}" />${0}'
+  'swfml font':
+    'prefix': 'font'
+    'body': '<font id="${1:id}" import="${2:resource}" glyphs="${3:glyph_list}"/>${0}'
+  'swfml frame':
+    'prefix': 'frame'
+    'body': '<frame>\n\t${0:content}\n</frame>'
+  'swfml import shared library':
+    'prefix': 'import'
+    'body': '<import file="${1:file}" url="${2:url}"/>${0}'
+  'swfml metadata':
+    'prefix': 'meta'
+    'body': '<meta title="my title" description="To be indexed" />'
+  'swfml place':
+    'prefix': 'place'
+    'body': '<place id="${1:id}" name="${2:output_name}" depth="${3:depth}"/>${0}'
+  'swfml sound':
+    'prefix': 'sound'
+    'body': '<sound id="${1:id}" import="${2:resource}"/>${0}'
+  'swfml text':
+    'prefix': 'text'
+    'body': '<textfield id="${1:id}" width="${2:width}" height="${3:height}" size="${4:size}" font="${5:font_name}" text="${6:text}"/>${0}'

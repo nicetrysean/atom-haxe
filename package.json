@@ -1,0 +1,13 @@
+{
+  "name": "language-haxe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A short description of your package",
+  "repository": "https://github.com/nicetrysean/atom-haxe",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

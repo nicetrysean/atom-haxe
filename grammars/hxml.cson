@@ -1,0 +1,20 @@
+'fileTypes': [
+  'hxml'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'hxml'
+'patterns': [
+  {
+    'match': '(-cp|-js|-as3|-swf-header|-swf-version|swf-lib|-swf9|-swf|-neko|-php|-xml|-x|-main|-lib|-D|-resource|-exclude|-v|-debug|-prompt|-cmd|--flash-strict|--no-traces|--flash-use-stage|--neko-source|--gen-hx-classes|--next|--display|--no-output|--times|--no-inline|--php-front|--remap|-help|--help)'
+    'name': 'keyword.other.hxml'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.comment.actionscript'
+    'match': '(#).*$\\n?'
+    'name': 'comment.line.number-sign.hxml'
+  }
+]
+'scopeName': 'source.hxml'
